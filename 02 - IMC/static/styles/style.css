@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap');
+/* "root" é raíz, arquiva variáveis*/
+:root{
+    --fonte-primaria:"Big Shoulders Display", sans-serif;
+
+    --cor-1: #c87ade;
+
+}
+
+/* o * serve para eliminar qualquer margem e preechimento da tela */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #dbc7df;
+}
+
+nav{
+    padding: 20px 10px;
+    background-color: white;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 10px;
+    color: var(--cor-1);
+}
+
+nav a:hover{
+    color: #b68bef;
+    text-decoration: underline;
+}
+
+.lan_imc{
+    background-color: white;
+    margin-top: 80px;
+    padding: 10px 5px;
+}
+
+
+.lanc_imc{
+    display: grid;
+    grid-template-columns: auto;
+    place-items: center;
+    font-size: 30px;
+    border-radius: 10px;
+    color: var(--cor-1);
+    align-items: center;
+    font-family: var(--fonte-primaria);
+    
+}
+
+
+.nomee{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 25px;
+    font-family: var(--fonte-primaria);
+}
+
+
+
+.nome{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 5px 25px;
+}
+
+.pesoo{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 25px;
+    font-family: var(--fonte-primaria);
+}
+
+
+
+.peso{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 5px 25px;
+}
+
+.alturaa{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 25px;
+    font-family: var(--fonte-primaria);
+}
+
+.altura{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 5px 25px;
+
+}
+
+
+.lançar{
+    margin-top: 30px;
+    font-size: 20px;
+    background-color: #b68bef;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border-radius: 0.5px solid black;
+    cursor: pointer;
+    font-family: var(--fonte-primaria);
+}
+
+.lançar:hover{
+    background-color: #cab1eb;
+}

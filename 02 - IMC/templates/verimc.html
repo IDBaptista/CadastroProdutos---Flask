@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ver IMC</title>
+    <link rel="stylesheet" href="/static/styles/imcstyle.css">
+</head>
+<body>
+    <nav>
+        <a href="/">IMC</a>
+        <a href="/consulta"> Ver IMC</a>
+    </nav>
+
+    <div class="ver_imc">
+        <h2>Ver IMC</h2>
+        <table class="ver_imc_tabela">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Peso</th>
+                    <th>Altura</th>
+                    <th>Altura^2</th>
+                    <th>IMC</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for pessoa in imc %}
+                <tr>
+                    <td>{{ pessoa.nome }}</td>
+                    <td>{{ pessoa.peso }}</td>
+                    <td>{{ pessoa.altura }}</td>
+                    <td>{{ pessoa.multiplicacao }}</td>
+                    <td>{{ pessoa.imc }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

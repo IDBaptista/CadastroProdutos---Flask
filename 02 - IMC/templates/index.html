@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <link rel="stylesheet" href="/static/styles/style.css">
+
+</head>
+
+<body>
+    <nav>
+        <a href="/">IMC </a>
+        <a href="/consulta">Ver IMC</a>
+     </nav>
+     <div class="lan_imc">
+        <form action="/calcular_imc" method="post" class="lanc_imc">
+            <h2 class="media">IMC</h2>
+
+                <label class="nomee" for="" >Nome:</label>
+                <input class="nome" name="nome" id="nome"> <br>
+
+                <label class="pesoo" for="" >Peso (kg):</label> <!-- é usado para associar rótulos a elementos de formulário-->
+                <input class="peso" name="peso" id="peso"> <br>  <!--Input serve para que o usuário insira dados -->
+
+                <label class="alturaa">Altura:</label>
+                <input class="altura" name="altura" id="altura"> 
+
+            <div>
+                <button type="submit" class="lançar" >Enviar</button> </button>
+            </div>
+        </form>
+     </div>
+</body>
+</html>
