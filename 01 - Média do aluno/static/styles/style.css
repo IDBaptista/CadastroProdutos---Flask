@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap');
+/* "root" é raíz, arquiva variáveis*/
+:root{
+    --fonte-primaria:"Big Shoulders Display", sans-serif;
+
+    --cor-1: #c87ade;
+
+}
+
+/* o * serve para eliminar qualquer margem e preechimento da tela */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #dbc7df;
+}
+
+nav{
+    padding: 20px 10px;
+    background-color: white;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 10px;
+    color: var(--cor-1);
+}
+
+nav a:hover{
+    color: #b68bef;
+    text-decoration: underline;
+}
+
+.lan_notas{
+    display: grid;
+    grid-template-columns: auto;
+    place-items: center;
+    font-size: 40px;
+    color: white;
+    
+}
+
+
+
+.lan_notas{
+    display: grid;
+    grid-template-columns: auto;
+
+    font-family: var(--fonte-primaria);
+    padding: 15px;
+    margin-top: 20px;
+
+}
+
+.nomee{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+
+
+.nome{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 5px 25px;
+}
+
+
+/* inserir o tipo de elemento no final, ele formatará apenas aquele
+elemento (foi escolhido o H2)*/
+
+.notas{
+    align-items: center;
+    padding-left: 70px;
+    background-color: #c7abed;
+    border-radius: 10px;
+    border-color: var(--cor-1);
+}
+
+.nota_umm{
+    font-size: 25px;
+    font-family: var(--fonte-primaria);
+}
+
+.nota_um{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.nota_doiss{
+    font-size: 25px;
+    font-family: var(--fonte-primaria);
+}
+
+.nota_dois{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 5px 10px;
+
+}
+
+.nota_tress{
+    font-size: 25px;
+    font-family: var(--fonte-primaria);
+}
+
+.nota_tres{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 5px 10px;
+
+}
+
+
+.lançar{
+    font-size: 15px;
+    background-color: #b68bef;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border-radius: 0.5px solid black;
+    cursor: pointer;
+}
+
+.lançar:hover{
+    background-color: #cab1eb;
+}
+
