@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversão Monetária</title>
+    <link rel="stylesheet" href="/static/styles/style.css">
+</head>
+<body>
+    <header>
+        <div class="conteudo_header">
+            <div class="logo">
+                <img src="/static/assets/moeda.png" alt="">
+            </div>
+            <div class="cabecalho_titulo">
+                <h2>Converta suas moedas com facilidade e agilidade!</h2>
+            </div>
+            <div class="cabecalho_imagens">
+                <img src="/static/assets/moeda.png" alt="">
+                <img src="/static/assets/moeda.png" alt="">
+                <img src="/static/assets/moeda.png" alt="">
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1>CONVERSOR DE MOEDAS</h1>
+        <div class="conversor">
+            <form action="" method="post" class="conversor_formulario">
+                <div class="conversor_label">
+                    <label for="">Valor</label>
+                    <label for="">Valor</label><br>
+                </div>
+                <div class="conversor_input">
+                    <div class="conversor_brasil">
+                        <input type="text" name="real" value="{{ moeda_real }}">
+                        <img src="/static/assets/brasil.png" alt="">
+                        <span>BRL</span>
+                    </div>
+                    <div class="conversor_eua">
+                        <input type="text" name="dolar" value="{{ moeda_dolar }}">
+                        <img src="/static/assets/eua.png" alt="">
+                        <span>USD</span>
+                    </div>
+                </div>
+                <div class="conversor_opcoes">
+                    <div class="conversor_cotacao">
+                        <label for="">Cotação do Dólar</label><br>
+                        <input type="text" name="cotacao" value="{{ cotacao }}">
+                    </div>
+                    
+                    <button type="submit" class="botao">Converter Dinheiro</button>
+                </div>
+            </form>
+        </div>
+        <div class="resultado">
+
+        </div>
+    </main>
+</body>
+</html>
